@@ -1,6 +1,5 @@
 .body {
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;    
 }
 
 
@@ -8,20 +7,23 @@
         display:block;
         float:right;
         height: 50px;
-        padding: 15px
+        padding: 10px
 }
 
 .caja{
     width: 200px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
+    
 }
 
 .caja a{
     text-decoration: none;
     color: black;
+    margin-right: 10px;
 }
 
 
@@ -29,15 +31,32 @@
     text-decoration:underline
 }
 
-.Google_Apps, .cuenta{
+.Google_Apps{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    padding:10px;
     border-radius: 50%;
     cursor:pointer;
 }
+.Acceder  {
+    background-color:blue;
+    border: 1px #e8ecf0;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+.Acceder:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
 
 main{
     width:100%;
@@ -61,7 +80,9 @@ main{
     margin:30px;
 }
 
-
+.buscador:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
 
 
 .lupa{
